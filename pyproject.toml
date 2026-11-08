@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mdlinkcheck"
+version = "0.1.0"
+description = "A dead-link checker for Markdown files"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Ujjwal Bhatia" }]
+requires-python = ">=3.9"
+
+[project.scripts]
+mdlinkcheck = "mdlinkcheck.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["mdlinkcheck"]
